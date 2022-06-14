@@ -1,24 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeeklyFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nathan-dumlao-5Hl5reICevY-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="Sfr-Ed-I0d">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Finder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4OV-Ob-lcL">
+                                <rect key="frame" x="130.5" y="44" width="153.5" height="46.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="153.5" id="img-QL-PGK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="RDj-SR-JmN">
+                                <rect key="frame" x="20" y="146" width="374" height="118"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FQP-0B-bwy">
+                                        <rect key="frame" x="0.0" y="0.0" width="49" height="118"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDc-Sx-RdQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="49" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="Wrh-Gi-3Ka"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLm-Lc-wpl">
+                                                <rect key="frame" x="0.0" y="42" width="49" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="b87-yZ-01E"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJr-dY-wbg">
+                                                <rect key="frame" x="0.0" y="84" width="49" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="M4H-Jz-vI6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wYn-g5-Kyv">
+                                        <rect key="frame" x="64" y="0.0" width="310" height="118"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3VA-mt-xWx">
+                                                <rect key="frame" x="0.0" y="0.0" width="310" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cfe-8D-cuE">
+                                                <rect key="frame" x="0.0" y="42" width="310" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Plr-C8-cma">
+                                                <rect key="frame" x="0.0" y="84" width="310" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k41-S9-Ufh">
+                                <rect key="frame" x="138.5" y="334" width="137" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="JY8-dU-SlP"/>
+                                    <constraint firstAttribute="height" constant="34" id="QSG-gS-fyz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5L6-Pi-7mg">
+                                <rect key="frame" x="158.5" y="428" width="97" height="33.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="97" id="s8Y-w0-Tfu"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Find day">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="findDayButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lh2-Yp-gGe"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Sfr-Ed-I0d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5DN-pk-1C9"/>
+                            <constraint firstItem="RDj-SR-JmN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8JJ-U0-UN2"/>
+                            <constraint firstItem="RDj-SR-JmN" firstAttribute="top" secondItem="4OV-Ob-lcL" secondAttribute="bottom" constant="55.5" id="8n3-zP-K9F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RDj-SR-JmN" secondAttribute="trailing" constant="20" id="9y9-uG-r3r"/>
+                            <constraint firstItem="5L6-Pi-7mg" firstAttribute="top" secondItem="k41-S9-Ufh" secondAttribute="bottom" constant="60" id="FMd-ti-grU"/>
+                            <constraint firstItem="k41-S9-Ufh" firstAttribute="top" secondItem="RDj-SR-JmN" secondAttribute="bottom" constant="70" id="JHQ-gG-Cgr"/>
+                            <constraint firstItem="RDj-SR-JmN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OHx-JJ-ARY"/>
+                            <constraint firstItem="Sfr-Ed-I0d" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Tui-Fs-CUB"/>
+                            <constraint firstAttribute="bottom" secondItem="Sfr-Ed-I0d" secondAttribute="bottom" id="VgV-Ug-gbC"/>
+                            <constraint firstItem="Sfr-Ed-I0d" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cRy-1r-rSV"/>
+                            <constraint firstItem="4OV-Ob-lcL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e1P-nH-Cbu"/>
+                            <constraint firstItem="4OV-Ob-lcL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="f4G-xU-ljK"/>
+                            <constraint firstItem="5L6-Pi-7mg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gdO-y4-CPA"/>
+                            <constraint firstItem="k41-S9-Ufh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hfN-2q-m4f"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dayTF" destination="3VA-mt-xWx" id="mvW-uM-GVT"/>
+                        <outlet property="findDayBatton" destination="5L6-Pi-7mg" id="dd1-p2-K4V"/>
+                        <outlet property="lableDay" destination="cDc-Sx-RdQ" id="T3S-Ad-h7C"/>
+                        <outlet property="lableMonth" destination="vLm-Lc-wpl" id="ek0-Vf-NXq"/>
+                        <outlet property="lableYear" destination="iJr-dY-wbg" id="XJw-2e-mBb"/>
+                        <outlet property="monthTF" destination="cfe-8D-cuE" id="cPc-uG-7tS"/>
+                        <outlet property="resultLable" destination="k41-S9-Ufh" id="JAm-vv-wSV"/>
+                        <outlet property="yearTF" destination="Plr-C8-cma" id="kkJ-ho-UUx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nathan-dumlao-5Hl5reICevY-unsplash" width="1040.5" height="1493.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
