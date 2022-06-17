@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nathan-dumlao-5Hl5reICevY-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="Sfr-Ed-I0d">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yash-kapadiya-cIaCg_r3UzY-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="Sfr-Ed-I0d">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Finder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4OV-Ob-lcL">
@@ -154,7 +154,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="nathan-dumlao-5Hl5reICevY-unsplash" width="1040.5" height="1493.5"/>
+        <image name="yash-kapadiya-cIaCg_r3UzY-unsplash" width="816" height="1088"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

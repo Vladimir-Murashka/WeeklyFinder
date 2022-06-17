@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "yash-kapadiya-cIaCg_r3UzY-unsplash@1x.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "yash-kapadiya-cIaCg_r3UzY-unsplash@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "yash-kapadiya-cIaCg_r3UzY-unsplash@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
